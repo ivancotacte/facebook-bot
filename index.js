@@ -22,6 +22,8 @@ login(
             const input = event.body.toLowerCase();
             if (input.startsWith("ping")) {
                 api.sendMessage("Pong!", event.threadID);
+            } else if (input.startsWith("chika")) {
+                api.sendMessage("Chika is Online!", event.threadID);
             }
         case "event":
           console.log(event);
